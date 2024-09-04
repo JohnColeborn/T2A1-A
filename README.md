@@ -44,9 +44,41 @@
 
 #  Q2 Identify a database commonly used in an API project (such as a Flask application) and discuss the pros and cons of this database.
 
+- Identify a database commonly used in an API project.
+    
+    While possibly not associated with being commonly used in an API project <b>Google Sheets</b> is an exemplary example of a database commonly used in API projects. Exemplary only in the case of innocence*. Used heavily in low-key, low demand, and low skill API projects.
 
+- Discuss the pros and cons of this database.
+    - <b>Pros</b>: 
+        - Is widely accessible.
+        - Free to use.
+        - Easily learnt database. 
+        - Its inherent security is excellent (Questionably).
+        - It utilises SQL (Limited).
+        - Extremely easy to understand overall structure.
+        - Accessible from an early understanding point.
+        - Shows and allows multiple users at once.
+
+    - <b>Cons</b>
+        - Integration with back end is complicated
+        - Not scalable due to limited storage
+        - Not designed as a database, so functionality overall is lacking
+        - Can't store beyond a table
+        - Performance drops when used simultaneously.
 
 #  Q3 Discuss an implementation of an Agile project management methodology for an API project.
+
+- What is an Agile methodology? 
+    - "Agile methodology is a project management framework that breaks projects down into several dynamic phases, commonly known as sprints". [[1]](#1)
+
+- 
+
+
+
+
+<a id="1">[1]</a>
+Laoyan, Sarah (Feb 2 2024)
+https://asana.com/resources/agile-methodology
 
 #  Q4 Provide an overview and description of a standard source control process for an API project.
 
