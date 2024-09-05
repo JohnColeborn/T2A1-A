@@ -71,9 +71,13 @@
 - What is an Agile methodology? 
     - "Agile methodology is a project management framework that breaks projects down into several dynamic phases, commonly known as sprints". [[1]](#1)
 
-- 
+- In the context of implementation often tools associated with project management are used to map out or "rough" draft an API. They are then used to break down the project into large chunks (often centered around specific features), and from the large chunks broken down further into smaller chunks that may be achievable in a single session or days work.
 
+    - Some examples of this include webapps such as Trello, which utilises kanban ideology to achieve this purpose. To further iterate on this example, initially a project will be started in Trello and cards will be created with generic overall information or tasks such as "Create Kanban", "Plot API structure", "Determine features required" etc.
 
+    - These cards are then modified with elements such as comments, priority listings, deadlines, and more. Once the overall Trello path is done it may be broken down further into "smaller chunks" such as on the "Plot API structure" card - adding elements such as "Utilise drawIO to wiremap the API features", "Ensure the relationships are defined e.g.: one to many, many to many or others".
+
+    - Once these initial steps are completed as the first 'sprints', the overall project moves forward similarly to the 'sprints' shift to more advanced elements.
 
 
 <a id="1">[1]</a>
@@ -81,6 +85,16 @@ Laoyan, Sarah (Feb 2 2024)
 https://asana.com/resources/agile-methodology
 
 #  Q4 Provide an overview and description of a standard source control process for an API project.
+
+- A common approach to standard source control includes but is not limited to version control software such as Git and focuses around certain aspects to achieve its desired outcome.
+
+    - These aspects include the capacity to backup data, implement multiple simultaneous users, roll back updates, enable tracking on each incoming and outgoing submission.
+
+    - In regard to how this applies to an API project an example would be multiple users working simultaneously on separate functions to be utilised together in the final product. This is achieved through Git by creating and working on separate branches which are upon completion submitted to the main branch to be merged. 
+
+    - After revision and an acceptance by the main branch and supervisor they will be merged and the entire project in the form of the main branch will increase or update to the next version. This entire process is tracked by the source control and enables the supervisor to rollback, reject, accept and use many other beneficial tools
+
+
 
 #  Q5 Provide an overview and description of a standard testing process for an API project.
 

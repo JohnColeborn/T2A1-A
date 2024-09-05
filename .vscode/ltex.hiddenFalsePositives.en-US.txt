@@ -1,0 +1,1 @@
+{"rule":"CAN_BACKUP","sentence":"^\\QThese aspects include the capacity to backup data,\\E$"}
