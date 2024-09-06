@@ -82,6 +82,7 @@
 
 <a id="1">[1]</a>
 Laoyan, Sarah (Feb 2 2024)
+
 https://asana.com/resources/agile-methodology
 
 #  Q4 Provide an overview and description of a standard source control process for an API project.
@@ -126,12 +127,32 @@ https://katalon.com/resources-center/blog/integration-testing
 
     - Integrity. Ensures validation of data both sent to and received from a client. This has many forms including controls around specific characters, length of string and size requirements. A common example of integrity principles is limiting the size and format of a file permitted to be sent and received, such as used by Gmail, where files over a certain size or alternate formats are not permitted due to those particular alterations outside the permissible being prone to use as a means of invasion or distortion of integrity.
 
-    - Availability. This sells itself, it is availability through any circumstance. In the case of a power outage, or a DDoS attack, the data behind security remains secure. A somewhat limited example of this is through source control. (git . )
+    - Availability. This sells itself, it is availability through any circumstance. In the case of a power outage, or a DDoS attack, the data behind security remains secure. A somewhat limited example of this is through source control. "*thanks for the memo, had some dodgy power outages this week don't want to lose progress*" (git add . etc)
+
+- To summarise the CIA triad is both astronomically and sadly necessary to ensure that data remains confidential, true to itself, and available when needed.
 
 <a id="3">[3]</a>
 https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-principles
 
-#  Q7 Provide an overview of what would need to be done within an API project to implement at least one of the principles explained in Question 6.
+#  Q7 Provide an overview of what would need to be done within an API project to implement at least one of the principles explained in Question 6. 
+
+- Confidentiality. In the example of an API, there are many factors of authentication and verification available as a means to ensure data verity and security. These include, but are not limited to, the use of tokens, passwords, possessions (phones, pcs), physical attributes (fingerprints, retinas). 
+
+    - As an example based around a data breach, copying somebody's fingerprint to access their phone. This involves biometric security or 'physical attributes' and may be accessed via "using a picture of the target's fingerprint" [[4]](#4).
+
+    - To parallelogram a little here a *browser fingerprint* collects data about a client in the same way that a biometrical fingerprint does. As a unique identifier of the client it is frequently used as a means of identification and verification. 
+
+    - As with a physical fingerprint, a browser fingerprint also is able to be tracked, 'stolen', and used adverse to confidentiality. Some means to prevent this include using a VPN, proxies, and masking.
+
+    - Within an API project, to implement confidentiality an example would be using hashed passwords, token authorisations, two-factor auth, and more. The concept is focusing on obfuscation and limitation.
+
+    - Obfuscation. Deliberately rerouting a source of data. EG: Torrents most famously of ThePirateBay fame. Hashing passwords, ensuring that data available to a client is unable to be accessed outside of the user to retrieve sensitive data.
+    - Limitation. Deliberately limited file handling. EG: Password must contain one capital, one special character, and be more than 9 digits. Hard coded varchar with a limitation of twenty elements may enforce a degree of security against brute forced or spammed infiltration.  
+
+<a id = "4">[4]</a>
+Mott, Nathaniel (Nov 23 2021)
+
+https://au.pcmag.com/security/91051/hacking-fingerprints-is-actually-pretty-easy-and-cheap
 
 #  Q8 Explain the legal obligations that developers of a social media website or social media application would have in regards to handling user data, with reference to any applicable laws or acts.
 
