@@ -146,7 +146,8 @@ https://www.cyber.gov.au/resources-business-and-government/essential-cyber-secur
 
     - Within an API project, to implement confidentiality an example would be using hashed passwords, token authorisations, two-factor auth, and more. The concept is focusing on obfuscation and limitation.
 
-    - Obfuscation. Deliberately rerouting a source of data. EG: Torrents most famously of ThePirateBay fame. Hashing passwords, ensuring that data available to a client is unable to be accessed outside of the user to retrieve sensitive data.
+    - Obfuscation. Deliberately rerouting a source of data. EG: Torrents somewhat infamously known due to sites such as ThePirateBay. Hashing passwords, ensuring that data available to a client is unable to be accessed outside of the user to retrieve sensitive data. Seen also in .env being hidden in our particular project. 
+
     - Limitation. Deliberately limited file handling. EG: Password must contain one capital, one special character, and be more than 9 digits. Hard coded varchar with a limitation of twenty elements may enforce a degree of security against brute forced or spammed infiltration.  
 
 <a id = "4">[4]</a>
