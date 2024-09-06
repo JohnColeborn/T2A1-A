@@ -71,7 +71,7 @@
 - What is an Agile methodology? 
     - "Agile methodology is a project management framework that breaks projects down into several dynamic phases, commonly known as sprints". [[1]](#1)
 
-- In the context of implementation often tools associated with project management are used to map out or "rough" draft an API. They are then used to break down the project into large chunks (often centered around specific features), and from the large chunks broken down further into smaller chunks that may be achievable in a single session or days work.
+- In the context of implementation, often tools associated with project management are used to map out or "rough" draft an API. They are then used to break down the project into an epic (often centered around specific features), and from the epic broken down further into stories that may be achievable in a single session or days work.
 
     - Some examples of this include webapps such as Trello, which utilises kanban ideology to achieve this purpose. To further iterate on this example, initially a project will be started in Trello and cards will be created with generic overall information or tasks such as "Create Kanban", "Plot API structure", "Determine features required" etc.
 
@@ -92,13 +92,44 @@ https://asana.com/resources/agile-methodology
 
     - In regard to how this applies to an API project an example would be multiple users working simultaneously on separate functions to be utilised together in the final product. This is achieved through Git by creating and working on separate branches which are upon completion submitted to the main branch to be merged. 
 
-    - After revision and an acceptance by the main branch and supervisor they will be merged and the entire project in the form of the main branch will increase or update to the next version. This entire process is tracked by the source control and enables the supervisor to rollback, reject, accept and use many other beneficial tools
+    - After revision and an acceptance by the main branch and supervisor they will be merged and the entire project in the form of the main branch will increase or update to the next version. This entire process is tracked by the source control and enables the supervisor to roll back, reject, accept and use many other beneficial tools.
 
 
 
 #  Q5 Provide an overview and description of a standard testing process for an API project.
 
+- An overview of a standard testing process for an API project.
+    - Utilising an application such as Insomnia is a commonly sourced solution to testing an API project. Outside particular apps it is effectively integration testing where unit testing is completed based on individual units such as a POST function, and once unit testing is complete it is then tested as an overall with a certain approach. Some approaches include 'Big Bang Approach, and Incremental Approach' [[2]](#2)
+
+    - Some further methods used as a part of testing particularly in Insomnia include the following:
+
+        - After programming a particular feature such as a POST method, Insomnia is used to 'Unit Test' the functions, checking for errors which range from 1xx to 5xx, and providing feedback in order to clarify issues.
+
+        - Another aspect of testing revolves around authentication, where again using Insomnia, a 'Unit Test' can be performed to confirm that correct security protocols and authorisations in general are appropriate. 
+
+<a id="2">[2]</a>
+Authors Unknown (Publication Date Unknown)
+
+https://katalon.com/resources-center/blog/integration-testing
+
+
 #  Q6 Explain the three principles of information system security.
+
+- To identify the 'three' principles.
+    - Confidentiality
+    - Integrity
+    - Availability
+
+- The AU government has an interesting take on these three principles and grow them further into 'five' principles [[3]](#3). These five principles assist in explaining the three.
+
+    - Confidentiality. To govern confidentiality it is necessary to identify assets used, and the associated risks. This then allows implementation of controls to manage the risks. Ensuring that data which is meant to be private remains as such includes methods such as hashing passwords, multifactor authentication, encryption methods such as symmetric or asymmetric encryption and more. 
+
+    - Integrity. Ensures validation of data both sent to and received from a client. This has many forms including controls around specific characters, length of string and size requirements. A common example of integrity principles is limiting the size and format of a file permitted to be sent and received, such as used by Gmail, where files over a certain size or alternate formats are not permitted due to those particular alterations outside the permissible being prone to use as a means of invasion or distortion of integrity.
+
+    - Availability. This sells itself, it is availability through any circumstance. In the case of a power outage, or a DDoS attack, the data behind security remains secure. A somewhat limited example of this is through source control. (git . )
+
+<a id="3">[3]</a>
+https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-principles
 
 #  Q7 Provide an overview of what would need to be done within an API project to implement at least one of the principles explained in Question 6.
 
