@@ -150,6 +150,8 @@ https://www.cyber.gov.au/resources-business-and-government/essential-cyber-secur
 
     - Limitation. Deliberately limited file handling. EG: Password must contain one capital, one special character, and be more than 9 digits. Hard coded varchar with a limitation of twenty elements may enforce a degree of security against brute forced or spammed infiltration.  
 
+    - Sidenote. As a point of interest, being a point of interest incurs intentional extra interest which simmers down to one of two directions. Direction 'A' being maximising security in which building a 'higher wall' becomes a 'wall to be climbed'. Direction 'B' being so dreary and commonplace that there is no wall at all but rather a sheep amidst a flock. While A in a sense paints a target, it also actively defends against invasion, whereas B has no target, but is also susceptible to invasion.
+
 <a id = "4">[4]</a>
 Mott, Nathaniel (Nov 23 2021)
 
