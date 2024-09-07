@@ -159,6 +159,74 @@ https://au.pcmag.com/security/91051/hacking-fingerprints-is-actually-pretty-easy
 
 #  Q8 Explain the legal obligations that developers of a social media website or social media application would have in regards to handling user data, with reference to any applicable laws or acts.
 
+- Data protection is an extremely prevalent need which revolves around multiple levels of law, comprehension, human error, human desire, and more. 
+
+- To iterate somewhat on these points:
+    - Law - In AU law, if you present data that is unprotected (by choice, EG sharing something on a social media platform without limiting viewers), then it is fair game to anyone who wishes to *view* it. This may also include privately presented data to a friend who shares it or simply *views* it (as their privacy settings may be less stringent). 
+
+        - A point here is that the friend here may not share the exact privacy settings of the original user.
+
+        - Also, "the Privacy Act doesn’t cover individuals acting in a personal capacity. This means you generally can’t enforce a privacy right against an individual. However, you may have rights under other laws, such as copyright or defamation laws" [[5]](#5)
+
+        - When is data processing allowed? Under EU law a company or organisation is allowed to collect and reuse your personal data under a few specifications:
+
+            - "They have a contract with you – for example, a contract to supply goods or services (i.e. when you buy something online), or an employee contract.
+            - They are complying with a legal obligation – for example, when processing your data is a legal requirement, for example when your employer gives information on your monthly salary to the social security authority, so that you have social security cover
+            - When data processing is in your vital interests – for example, when this might protect your life
+            - To complete a public task – mostly relating to the tasks of public administrations such as schools, hospitals, and municipalities
+            - When there are legitimate interests – for example, if your bank uses your personal data to check whether you'd be eligible for a savings account with a higher interest rate" [[6]](#6)
+
+
+    - Comprehension
+        - When the above stipulations are considered, it can be assumed that as a user, submitting data in any format is protected.
+        - Comprehension of the gaps in speech are commonly referred to as loopholes. As with the written words, programming containing specific instructions specifies *rules* and when the *rules* are followed the client and provider is protected. 
+        - When the *rules* are ignored, dodged, or misaligned, the loopholes become prevalant. A simple example of this is: 
+        - 1+ 1 = 2. This statement is true provided that we are working in base 10. If however we are working in base 2, 1+1 = 10. "(Also 1 + 1 = window)"[[7]](#7)
+
+    - Human Error
+        - A large portion of data breeches occur around human error, such as where 'My uncle from Nigeria just passed away and being the sole heir I have inherited $100M USD' is the lifeline that the user has been searching for. Then ignoring, (or being ignorant of) the 'protection' provided by services used, extremely personal data is willingly shared, such as banking details, addresses, login details and more.
+
+        - The more relevant part of human error with regard to this question is securing data. While ticking all the data protection boxes, hashing all the passwords, encrypting, limiting and more. Someone somewhere forgets a comma, and being a specific set of rules, the lack of that peculiar comma is a leak in the boat.
+            - 'It' is defined as a comma,
+            - It hasn't broken the code,
+            - It is extremely easy to misplace,
+            - It is extremely hard to find, 
+            - It is the difference between secure and insecure.
+
+    - Human Desire
+        -  Both desiring privacy, and desiring knowledge are two human desires. Especially relevant when the idiom 'knowledge = power' is related to. Knowing how to obtain information from an 'out of bounds' source is sometimes deemed as illegal. 
+        - Or a 'forbidden fruit', while being forbidden, is irresistible due to its inherent nature. This fruit is in its own nature a standard piece of fruit, but the *forbidden* nature makes it desirable to obtain.
+        - To desire privacy and an exclusive right to *self* and the intellectual property of *self* is both inherent and impossible outside of extreme isolation.
+        - An example of this is being a tree alone in the woods, falling down, and making a sound. Provided that there is a receptor of information to capture the fall, it is not private. 
+
+    - Summary & Synopsis
+        - As a developer of a social media platform, with regard to laws, it is influenced by the aforementioned points. As specified above, it is also highly realised that the main specificity in regard to duty of care is that "due diligence" [[8]](#8) is given. Commas are checked, passwords are hashed, .env is not shared.
+
+        - The acts of due diligence surrounding a social media platform include country specific litigation, contemporary knowledge, appropriate handling on the backend. 
+
+        - These factors may fail regardless of all consideration due to aforementioned incidents.
+
+    <a id = "5">[5]</a>
+    AU Gov - Official Statement
+
+    https://www.oaic.gov.au/privacy/your-privacy-rights/social-media-and-online-privacy/social-media
+
+    <a id = "6">[6]</a>
+    EU Gov - Official Statement
+
+    https://europa.eu/youreurope/citizens/consumers/internet-telecoms/data-protection-online-privacy/index_en.htm
+
+    <a id = "7">[7]</a>
+    Various People
+
+    https://www.quora.com/Who-made-up-1-1-window
+    
+    <a if = "8">[8]</a>
+
+    Merriam-Webster Dictionary(Date unknown)
+
+    https://www.merriam-webster.com/dictionary/due%20diligence
+
 # Q9 Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.
 
 #  Q10 Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database.
