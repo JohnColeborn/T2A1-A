@@ -253,18 +253,94 @@ https://au.pcmag.com/security/91051/hacking-fingerprints-is-actually-pretty-easy
 
     <a id = "9">[9]</a>
     Unknown Authors, Unknown Date
+
     https://www.vaia.com/en-us/textbooks/computer-science/fundamentals-of-database-systems-4-edition/chapter-6/problem-14-when-is-a-query-language-called-relationally-comp/
 
 # Q11 Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database.
-- Through the use of SQL (Structured Query Language) 
+- Through the use of SQL (Structured Query Language) data is manipulated in a few ways such as adding, removing, changing, and retrieving.
+    - Adding is achieved by methods such as 'INSERT INTO', 'CREATE DATABASE', 'CREATE TABLE', and 'CREATE INDEX'.
+    - Subtraction is performed through the use of 'DELETE', 'DROP TABLE', and 'DROP INDEX'.
+    - Alterations would use methods like 'UPDATE', 'ALTER DATABASE',
+    'ALTER TABLE'.
+    - Retrieval of data can be achieved through 'SELECT'.
+
+- With regard to the manipulative aspects of the database model, the use of Data Manipulation Language (DML) and Data Definition Language (DDL) shows that tables in a relational model are able to communicate, alter, retrieve from, and add to each other. This symbiotic relationship is one of the strengths of the relational database model. 
 
 # Q12 Conduct research into a web application (app) and answer each of the following sub-questions:
 
-   - List and describe the software (tech stack) used by the app. 
-   - Describe or make educated guesses about the hardware used to host the app.
-   - Describe the interaction of technologies within the app.
-   - Describe the way data is structured within the app’s database(s).
-   - Identify the entities/tables that are tracked within the app’s database(s).
-   - Identify the relationships and associations between the entities/tables identified in sub-question E.
-   - Design an entity relationship diagram (ERD) based on the answers provided to sub-questions E and F. This must represent a relational database model, even if the app itself uses something other than a relational database model.
+## Google
+- List and describe the software (tech stack) used by the app. 
+    - Content Management System - Wagtail  
+        - A free and open source content management system written in Python. Is popular amongst websites using Django.  
+    - Security - HSTS (HTTP Strict Transport Security)
+        - A policy mechanism that ensures browsers always connect to a website over HTTPS
+    - Web Framework - Django
+        - Free open source Python-based web framework that runs on a web server.
+    - Web Server - Google Web Server
+        - Software used by Google for its web infrastructure, exclusive to Google's ecosystem.
+    - Programming - Python
+        - High level, general purpose programming language
+    - JavaScript Libraries - Closure Library, lit-element[4.0.2], lit-html[3.1.0]    
+    - Miscellaneous - Open Graph, HTTP/3
 
+- Describe or make educated guesses about the hardware used to host the app.
+    - The hardware utilised by Google is stored in 'Data Centers' which are essentially warehouses built with environmental controls (cooling and humidification) that house aisles of racks.
+    - The racks contain computer nodes, large drives, and internal/external networking.
+    - It is assumed that on a base level the hardware used would include routers, switches, firewalls, cables, modems, hard drives, tape drives, ram and more. 
+- Describe the interaction of technologies within the app.
+    - Being a 'super' app, Google has many technologies within its app, some of which include AI, Speech to Text, Image Search, and many more. These technologies or 'features' often interact with each other, (EG: Using Speech to Text to search for an Image based on AI rendering). 
+    - Within these interactions lie the individual technologies, for instance Speech to Text may use Automatic Speech Recognition (ASR), which relies on knowledge of linguistics, computer science and electrical engineering to perform its functions.
+    - The search function itself may rely on functions as simple as SELECT * from Google, (placeholder table name), where ASR data received == text.languagetype.
+    - When these two separate functions are utilized together the overall act of searching for something on Google via speech to text is made possible.
+- Describe the way data is structured within the app’s database(s).
+    - Google uses a database called Google Bigtable which is a NoSQL distributed storage system for a number of services. "While Bigtable stores data in a tabular format, it is not a relational database". [[10]](#10)
+
+    - The way this database differs from a standard relational database is that it does not use a column layout, but rather groups columns into 'families' and stores them together.
+
+    - The columns are then identified by combining the 'family' name and the column qualifier (unique name within the family - similar concept overall to Surname-First Name).
+
+    - Rows can each contain multiple cells, and each cell will contain a timestamped version of the data for its corresponding row/column.
+
+    - Another point of interest is the tables in this database are referred to as *sparse* effectively meaning that if a column is not used for a row it does not use any space.
+
+    <a id ="10">[10]
+    Palmer, Matt (Feb 27 2023)
+
+    https://www.zuar.com/blog/what-is-google-bigtable/
+
+
+- Identify the entities/tables that are tracked within the app’s database(s).
+    - Educated speculation based around Google Knowledge Graph Search API [[11]](#11):
+        - Entities and tables may include:
+            - Metadata
+            - Knowledge Graph
+            - Context
+            - Vocabulary
+            - Result Score
+
+    <a id = "11">[11]</a>
+
+    https://developers.google.com/knowledge-graph
+
+- Identify the relationships and associations between the entities/tables identified in sub-question E.
+
+    - To identify and explain these relationships we consider the following:
+        - Interaction between SQL and a table. Specific to this example 'SELECT'. When a search is performed in Google a somewhat simplified version of the query string may be along these lines:
+            - "@context":
+
+                {"@vocab": "http://schema.org/",
+
+                "goog": "http://schema.googleapis.com/",
+
+                "resultScore": "goog:resultScore",
+
+                "detailedDescription": "goog:detailedDescription",
+
+                "EntitySearchResult": "goog:EntitySearchResult"}
+        
+            This search first checks for context (may include images/sounds/text), then checks for vocabulary (languages used), refers to its knowledge graph (database containing byte info), cross-references each step in detailed description, identifies unique entities relevant, and returns a result score for each entity in order to return to the client an ordered list based on "relevance".
+
+                
+- Design an entity relationship diagram (ERD) based on the answers provided to sub-questions E and F. This must represent a relational database model, even if the app itself uses something other than a relational database model. 
+
+![image](img/erdimg.png)
