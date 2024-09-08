@@ -228,10 +228,35 @@ https://au.pcmag.com/security/91051/hacking-fingerprints-is-actually-pretty-easy
     https://www.merriam-webster.com/dictionary/due%20diligence
 
 # Q9 Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.
+- Structural aspects of relational database models are in essence a collection of tables made up of rows and columns. Each table contains multiple columns and rows.
+- These tables are identified and connected through the use of 'primary keys' and 'foreign keys' in such a way that each table can interact with the other.
+    - Some differences in the way they interact can include:
+        - One to many,
+        - Many to many,
+        - One to one.
+- As seen in the image below, we can see the data stored in the left columns are for identification (containing the primary and foreign keys), the data stored in the right columns includes the rows used to hold the data used in the table. (This may include things like fields, lists etc)
+![image](img/databaseimg.png)
+
 
 #  Q10 Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database.
+- The integrity of data in a relational database is mainly focused around three points. 
+    - Accuracy 
+        - This is ensured through the use of methods such as datatype checks. When creating a table we specify the data types allowed to be passed as arguments. EG: The datatype is assigned as int, which can then only be given values of an integer. Another example would be varchar(50) which not only limits the data type but also limits how many characters are permitted. 
+        - These limitations help create the 'rules' that ensure accuracy.
+    - Consistency
+        - Keeping data consistent is generally achieved through the use of 'key' constraints or uniqueness constraints.
+        - For example a Primary Key must be unique and not null which guarantees that every tuple in the relation is unique.
+        - A referential integrity constraint is created to specify between relations. It works through the use of foreign keys which access the primary key from a separate entity and can then retrieve data from that table. Consistency is achieved by the unique keys and the overall concept that each element is truly unique which also ensures that if changes are made to one table, the corresponding changes will translate to all other related tables.
+    - Completeness
+        - This is the need to have each element specified, and constrained in such a way that all expected data is completed and accurate. It is achieved through the use of methods such as 'Not Null', or coding so that a password for example must have a minimum length, must only contain alphanumeric characters.
+        - "Relational Completeness is a term used in Database System to indicate whether a database's query language is capable of expressing all basic retrievals and updates. When applied to a query language, this means the language can be used to manipulate the data in ways defined by the relational model."[[9]](#9)
+
+    <a id = "9">[9]</a>
+    Unknown Authors, Unknown Date
+    https://www.vaia.com/en-us/textbooks/computer-science/fundamentals-of-database-systems-4-edition/chapter-6/problem-14-when-is-a-query-language-called-relationally-comp/
 
 # Q11 Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database.
+- Through the use of SQL (Structured Query Language) 
 
 # Q12 Conduct research into a web application (app) and answer each of the following sub-questions:
 
